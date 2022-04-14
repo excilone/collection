@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"lib": ["ESNext"],
+		"outDir": "dist",
+		"strict": true,
+		"noImplicitAny": true,
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"target": "ES2021",
+		"alwaysStrict": true,
+		"strictNullChecks": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"declaration": true
+	},
+	"include": ["./src", "index.d.ts"],
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "@excilone/collection",
+    "description": "Extended Map and Set data structures",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "author": "cr1xto",
+    "license": "Apache-2.0",
+    "private": false,
+    "files": [
+        "dist/**"
+    ],
+    "devDependencies": {
+        "@types/node": "^17.0.23",
+        "@typescript-eslint/eslint-plugin": "^5.17.0",
+        "@typescript-eslint/parser": "^5.17.0",
+        "eslint": "^8.12.0",
+        "eslint-config-prettier": "^8.5.0",
+        "prettier": "^2.6.2",
+        "typescript": "^4.6.3"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "node index.test.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write .",
+        "prepublishOnly": "yarn format && yarn lint && yarn build"
+    },
+    "packageManager": "yarn@1.22.15",
+    "keywords": [
+        "excilone",
+        "map",
+        "set",
+        "collection",
+        "list"
+    ],
+    "publishConfig": {
+        "access": "public"
+    }
+}
